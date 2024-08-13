@@ -1,13 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
-  theme: {
+content: ["./public/**/*.{html,js}"],
+theme: {
     extend: {
-      fontFamily: {
+    container: {
+        center: true
+    },
+
+    fontFamily: {
         k2d: ['K2D'],
         lato: ['Lato']
-      },
-      colors: {
+    },
+    
+    colors: {
         'porto-bg': '#121212',
         'light': '#E7F8FF',
         'light-hover': '#D8F3FF',
@@ -19,9 +24,9 @@ module.exports = {
         'dark-hover': '#004F99',
         'dark-active': '#003B72',
         'darker': '#002E59',
-      }
+    }
     },
-  },
-  plugins: [],
+},
+plugins: [],
 }
 

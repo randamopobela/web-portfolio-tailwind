@@ -8,13 +8,15 @@
 </head>
 <body class="bg-porto-bg">
     <header>
-        <nav class="py-4">
+        <nav class="px-8 py-6">
             <div class="container mx-auto flex items-center justify-between">
+                <!-- Logo -->
                 <div class="text-gradient font-bold text-2xl font-k2d">
                     <a href="#">RANDA</a>
                 </div>
 
-                <ul class="hidden md:flex space-x-8 gap-12 text-gray-500 font-lato">
+                <!-- Menu -->
+                <ul class="hidden md:flex space-x-8 lg:gap-12 text-gray-500 font-lato">
                     <li><a href="#" class="hover:text-hover">Home</a></li>
                     <li><a href="#" class="hover:text-hover">Services</a></li>
                     <li><a href="#" class="hover:text-hover">About me</a></li>
@@ -22,11 +24,44 @@
                     <li><a href="#" class="hover:text-hover">Contact me</a></li>
                 </ul>
 
+                <!-- Burger Menu Icon -->
+                <button type="button" id="menu-btn" class="ml-auto relative inline-flex items-center justify-center rounded-md p-1 text-gray-400 hover:bg-gray-700 hover:text-white md:hidden" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+
+                    <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                    <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                
+                <!-- Hire Me Button -->
                 <div>
-                    <button class="bg-gradient-to-br from-normal to-normal-hover text-light text-sm font-lato px-8 py-2 rounded-md">Hire Me</button>
+                    <button class="hidden md:flex bg-gradient-to-br from-normal to-normal-hover text-light text-sm font-lato px-8 py-2 rounded-md">Hire Me</button>
                 </div>
             </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="flex flex-col items-end space-y-4 py-4 text-gray-500 font-lato">
+                    <li><a href="#" class="hover:text-hover">Home</a></li>
+                    <li><a href="#" class="hover:text-hover">Services</a></li>
+                    <li><a href="#" class="hover:text-hover">About me</a></li>
+                    <li><a href="#" class="hover:text-hover">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-hover">Contact me</a></li>
+                </ul>
+                <div class="flex justify-end">
+                    <button class="bg-gradient-to-br from-normal to-normal-hover text-light text-sm font-lato px-8 py-2 rounded-md">Hire Me</button>
+                </div>
+            </div> 
         </nav>
     </header>
+
+    <script src="../src/index.js"></script>
 </body>
 </html>
