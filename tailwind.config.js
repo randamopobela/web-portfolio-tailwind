@@ -13,6 +13,7 @@ theme: {
         },
         
         colors: {
+            'content-bg': '#171717',
             'porto-bg': '#121212',
             'porto-darker': '#1B1B1B',
             'light': '#E7F8FF',
