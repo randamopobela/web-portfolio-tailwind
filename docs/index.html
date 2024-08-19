@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../public/output.css">
     <title>Randa Mopobela</title>
 </head>
 <body class="bg-porto-bg">
@@ -42,7 +42,7 @@
                 
                 <!-- Hire Me Button -->
                 <div>
-                    <button class="hidden md:flex bg-gradient-to-br from-normal to-normal-hover text-light text-sm font-lato px-8 py-2 rounded-md">Hire Me</button>
+                    <button class="hidden md:flex bg-gradient-to-br from-normal to-normal-hover text-light text-sm font-lato px-8 py-2 rounded-md hover:scale-105">Hire Me</button>
                 </div>
             </div>
 
@@ -63,16 +63,23 @@
     </header>
 
     <main class="px-4 pt-4 font-lato">
-        <!-- HERO -->
-        <section class="py-6 flex flex-wrap">
-            <div class="container p-3 rounded-md bg-content-bg lg:w-1/2">
+        <!-- HERO SECTION -->
+        <section class="py-6 flex flex-wrap lg:justify-center items-stretch h-auto">
+            <!-- Container Kiri -->
+            <div class="container p-3 rounded-md lg:w-1/2 flex flex-col justify-center items-center">
                 <div class="flex-col">
                     <h2 class="text-gray-500 ">Hi, I am</h2>
 
                     <h1 class="text-gray-400 text-lg">Randa Mopobela</h1>
 
-                    <h2 class="py-4 text-gradient text-5xl text-wrap font-semibold">Student of Information Systems</h2>
+                    <!-- Cadangan -->
+                    <!-- <h2 class="py-4 text-gradient text-5xl text-wrap font-semibold">Student of Information Systems</h2> -->
 
+                    <div class="py-4">
+                        <h2 class="text-gradient text-5xl text-wrap font-semibold">Student of</h2>
+                        <h2 class="text-gradient text-5xl text-wrap font-semibold">Information Systems</h2>
+                    </div>
+                    
                     <!-- Social Media Button -->
                     <div class="py-2">
                         <div class="flex flex-row gap-2">
@@ -110,7 +117,7 @@
                     </div>
 
                     <!-- Experience Tab -->
-                    <div class="py-4 flex place-content-evenly justify-center items-center max-w-md bg-porto-darker rounded-md">
+                    <div class="py-4 flex place-content-evenly justify-center max-w-md bg-porto-darker rounded-md">
                         <div class="px-4 py-1 text-center flex-auto">
                             <h3 class="text-normal font-semibold text-sm">5+</h3>
                             <p class="text-light text-sm">Experiences</p>
@@ -129,11 +136,12 @@
                 </div>
             </div>
 
-            <div class="container p-3 py-4 rounded-md bg-content-bg lg:w-1/2">
+            <!-- Container Kanan -->
+            <div class="container p-3 py-4 rounded-md lg:w-1/2 flex justify-center items-center">
                 <div class="relative flex justify-center">
                     <!-- Background Circle -->
                     <div class="absolute inset-0 flex justify-center items-end">
-                        <div class="w-[448px] h-[448px] bg-porto-darker rounded-full"></div>
+                        <div class="w-[348px] h-[348px] bg-porto-darker rounded-full sm:w-[432px] sm:h-[432px]"></div>
                     </div>
                 
                     <!-- Gambar Profil -->
@@ -146,17 +154,17 @@
             </div>
         </section>
 
-        <!-- SERVICE -->
+        <!-- SERVICE SECTION -->
 
-        <!-- ABOUT ME -->
+        <!-- ABOUT ME SECTION -->
 
-        <!-- PORTFOLIO -->
+        <!-- PORTFOLIO SECTION -->
 
-        <!-- CONTACT ME -->
+        <!-- CONTACT ME SECTION -->
     </main>
 
     <footer></footer>
 
-    <script src="../src/index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
